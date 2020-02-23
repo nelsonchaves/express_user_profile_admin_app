@@ -1,0 +1,16 @@
+<h1>{{#each users}}{{Username}}{{/each}} - Profile Admin View</h1>
+<div class="userList2">
+    <h3>Profile:</h3>
+    <ul>
+        {{#each users}}
+        <li><strong>Full Name: </strong>{{FirstName}} {{LastName}}</li>
+        <li><strong>Email: </strong>{{Email}}</li>
+        <li><strong>Username: </strong>{{Username}}</li>
+        <li><strong>UserID: </strong>{{UserId}}</li>
+        <li><strong>Creation Date: </strong>{{CreationDate}}</li>
+        <li><strong>Last Updated: </strong>{{UpdatedDate}}</li>
+        <li><strong>Deleted: </strong>{{Deleted}}</li>
+        {{/each}}
+    </ul>
+</div>
+

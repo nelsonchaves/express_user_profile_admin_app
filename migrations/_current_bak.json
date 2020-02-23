@@ -1,0 +1,63 @@
+{
+    "tables": {
+        "users": {
+            "tableName": "users",
+            "schema": {
+                "UserId": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "UserId",
+                    "seqType": "Sequelize.INTEGER(11)"
+                },
+                "FirstName": {
+                    "allowNull": true,
+                    "field": "FirstName",
+                    "seqType": "Sequelize.STRING(45)"
+                },
+                "LastName": {
+                    "allowNull": true,
+                    "field": "LastName",
+                    "seqType": "Sequelize.STRING(45)"
+                },
+                "Username": {
+                    "allowNull": true,
+                    "unique": true,
+                    "field": "Username",
+                    "seqType": "Sequelize.STRING(45)"
+                },
+                "Password": {
+                    "allowNull": true,
+                    "field": "Password",
+                    "seqType": "Sequelize.STRING"
+                },
+                "Email": {
+                    "allowNull": true,
+                    "unique": true,
+                    "field": "Email",
+                    "seqType": "Sequelize.STRING(45)"
+                },
+                "Admin": {
+                    "allowNull": false,
+                    "defaultValue": {
+                        "value": "0"
+                    },
+                    "field": "Admin",
+                    "seqType": "Sequelize.BOOLEAN"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATEONLY"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATEONLY"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "revision": 1
+}
